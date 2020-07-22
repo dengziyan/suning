@@ -9,6 +9,7 @@
                 </router-link>
             </li>
             <li>
+
                 <router-link to="/type">
                     <img src="../assets/img/157562573743964714.png"  alt="">
                     <span>分类</span>
@@ -40,9 +41,9 @@ html{
         font-size: 24px;
     }
 </style>
- 
+
 <style scoped>
-   
+
      .footGuide{
         background: white;
         width: 100%;
@@ -77,5 +78,5 @@ html{
         line-height: .64rem;
         color: #666;
      }
-    
+
 </style>

@@ -1,9 +1,124 @@
 {
 	"shoplist":[
 		{
-			"imgsrc":"src/data/assets/images/shoplist1.jpg",
+			"imgsrc":"./data/assets/images/shoplist1.jpg",
 			"name":"Apple iPhone 11 128G",
-			"attribute":" 光学屏幕指纹| 20W快充| 4800万三摄",
+			"attribute":" 紫色 | 双卡双待| 全网通",
+			"dec":[
+				{
+					"b":"64GB",
+					"p":"机身内存"
+				},
+				{
+					"b":"6GB",
+					"p":"运行内存"
+				},
+				{
+					"b":"6.3英寸",
+					"p":"屏幕尺寸"
+				}
+
+			],
+			"comSpan1":"86万+条评价",
+			"comSpan2":"好评率99%",
+			"shop":"Apple产品苏宁自营旗舰店"
+		},
+		{
+			"imgsrc":"./data/assets/images/shoplist2.jpg",
+			"name":"Apple iPhone 11 128G",
+			"attribute":" 紫色 | 双卡双待| 全网通",
+			"dec":[
+				{
+					"b":"64GB",
+					"p":"机身内存"
+				},
+				{
+					"b":"6GB",
+					"p":"运行内存"
+				},
+				{
+					"b":"6.3英寸",
+					"p":"屏幕尺寸"
+				}
+
+			],
+			"comSpan1":"86万+条评价",
+			"comSpan2":"好评率99%",
+			"shop":"Apple产品苏宁自营旗舰店"
+		},
+		{
+			"imgsrc":"./data/assets/images/shoplist3.jpg",
+			"name":"Apple iPhone 11 128G",
+			"attribute":" 紫色 | 双卡双待| 全网通",
+			"dec":[
+				{
+					"b":"64GB",
+					"p":"机身内存"
+				},
+				{
+					"b":"6GB",
+					"p":"运行内存"
+				},
+				{
+					"b":"6.3英寸",
+					"p":"屏幕尺寸"
+				}
+
+			],
+			"comSpan1":"86万+条评价",
+			"comSpan2":"好评率99%",
+			"shop":"Apple产品苏宁自营旗舰店"
+		},
+		{
+			"imgsrc":"./data/assets/images/shoplist1.jpg",
+			"name":"Apple iPhone 11 128G",
+			"attribute":" 紫色 | 双卡双待| 全网通",
+			"dec":[
+				{
+					"b":"64GB",
+					"p":"机身内存"
+				},
+				{
+					"b":"6GB",
+					"p":"运行内存"
+				},
+				{
+					"b":"6.3英寸",
+					"p":"屏幕尺寸"
+				}
+
+			],
+			"comSpan1":"86万+条评价",
+			"comSpan2":"好评率99%",
+			"shop":"Apple产品苏宁自营旗舰店"
+		},
+		{
+			"imgsrc":"./data/assets/images/shoplist2.jpg",
+			"name":"Apple iPhone 11 128G",
+			"attribute":" 紫色 | 双卡双待| 全网通",
+			"dec":[
+				{
+					"b":"64GB",
+					"p":"机身内存"
+				},
+				{
+					"b":"6GB",
+					"p":"运行内存"
+				},
+				{
+					"b":"6.3英寸",
+					"p":"屏幕尺寸"
+				}
+
+			],
+			"comSpan1":"86万+条评价",
+			"comSpan2":"好评率99%",
+			"shop":"Apple产品苏宁自营旗舰店"
+		},
+		{
+			"imgsrc":"./data/assets/images/shoplist3.jpg",
+			"name":"Apple iPhone 11 128G",
+			"attribute":" 紫色 | 双卡双待| 全网通",
 			"dec":[
 				{
 					"b":"64GB",

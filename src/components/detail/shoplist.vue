@@ -7,7 +7,7 @@
                 <input type="text" placeholder="请搜索商品、店铺"
              value="手机">
             </div>           
-            <i></i>
+            <router-link to="/type"><i></i></router-link>
         </header>
         <main>
             <ul class="rule">
@@ -20,46 +20,49 @@
                 <li>
                     <p> 苏宁服务</p>                 
                 </li>
-                <li>
+                <li class="span">
                     <p>品牌</p>
-                    <i></i>
                 </li>
-                <li>
+                <li class="span">
                     <p>屏幕尺寸</p>
-                    <i></i>
                 </li>
-                <li>
+                <li class="span">
                     <p>机身内存</p>
-                    <i></i>
                 </li>
             </ul>
             <div class="shop">
                  <ul>
-                    <li v-for="(v,i) in shoplist" :key="i">
-                        <div class="left">
-                            <img :src="v.imgsrc" alt="" />
-                            
-                        </div>
-                        <div class="right">
-                            <div class="detail">
-                                <h5>{{v.name}}</h5>
-                                <p>{{v.attribute}}</p>
-                            </div>                           
-                            <ul class="size">
-                                <li v-for="(a,i) in v.dec" :key="i">
-                                    <b>{{a.b}}</b>
-                                    <p>{{a.p}}</p>
-                                </li>
-                            </ul>
-                            <div class="comments">
-                                <P>
-                                    <span>{{v.comSpan1}}</span>
-                                    <span>{{v.comSpan2}}</span>
-                                </P>
-                                <p>{{v.shop}}</p>
+                    <li class="goods"   v-for="(v,i) in shoplist" :key="i">
+                        <router-link to="/detail">
+                            <div class="left">
+                                <img :src="v.imgsrc" alt="" />                           
                             </div>
-
-                        </div>
+                            <div class="right">
+                                <div class="detail">
+                                    
+                                        <span>自营</span>
+                                        <h5>{{v.name}}</h5>
+                                    
+                                    <p>{{v.attribute}}</p>
+                                </div>                           
+                                <ul class="size">
+                                    <li v-for="(a,i) in v.dec" :key="i">
+                                        <b>{{a.b}}</b>
+                                        <p>{{a.p}}</p>
+                                    </li>
+                                </ul>
+                                <div class="comments">
+                                    <P>
+                                        <span>{{v.comSpan1}}</span>
+                                        <span>{{v.comSpan2}}</span>
+                                    </P>
+                                    <p>
+                                        <span class="shopName">{{v.shop}}</span>
+                                        <!-- <span>进店></span> -->
+                                    </p>
+                                </div>
+                            </div>
+                        </router-link>
                     </li>       
                 </ul>
             </div> 
@@ -117,7 +120,7 @@ export default{
         position: absolute;
         width: 20px;
         height: 20px;
-        top: 14px;
+        top: 22px;
         left: 15%;
     }
      header i{
@@ -126,7 +129,7 @@ export default{
         position: absolute;
         width: 20px;
         height: 20px;
-        top: 12px;
+        top: 18px;
         right: 5%;
     }
     
@@ -168,15 +171,28 @@ export default{
         padding: 6px 8px;
         position: relative;
     }
-    .choose li i{
-        background: url('../../assets/img/icon.png') 
-        -23px -12px no-repeat;
-        position: absolute;
-        width: 17px;
-        height: 7px;
-        top: 10px;
-        right: 0px;
+    .choose .span p{
+        position: relative;
     }
+    .choose .span p::after{
+        content: " ";
+        background: url('../../assets/img/icon.png') 
+        -24px -15px no-repeat;    
+        position: absolute;
+        width: 8px;
+        height: 4px;
+        top: 7px;
+        right: -3px;
+    }
+    /* .choose li i{
+        background: url('../../assets/img/icon.png') 
+        -24px -15px no-repeat;    
+        position: absolute;
+        width: 8px;
+        height: 4px;
+        top: 12px;
+        right: 12px;
+    } */
     .choose li:nth-child(1){
         margin-left: 2%;
     }
@@ -186,10 +202,14 @@ export default{
         box-sizing: border-box;
 
     }
+    main .shop .goods{
+        /* margin-bottom: 30px; */
+    }
     .shop .left{
         float: left;
         width: 30%;
         margin-right: 5%;
+        padding-top: 20px;
     }
     .shop .left img{
         width: 100%;
@@ -197,15 +217,27 @@ export default{
     .shop .right{
         float: left;
         width: 60%;
+        border-bottom: 1px solid #EEEEEE;
+        padding-bottom: 10px;
+        padding-top: 20px;
     }
-    .right .detail h5{
-        font-size: 15px;
-        font-weight: normal;
-        color: #734c01;
+    .right .detail span{
+        display: inline-block;
+        border: 1px solid #f60;
+        color: #f60;
+        font-size: 12px;
+        padding: 1px;
+        border-radius: 3px;
 
     }
+    .right .detail h5{
+        font-size: 12px;
+        font-weight: normal;
+        color: #734c01;
+        display: inline;
+    }
     .right .detail p{
-        font-size: 14px;
+        font-size: 12px;
         color: #999;
         word-break: break-all;
         overflow: hidden;
@@ -216,14 +248,17 @@ export default{
     }
    
     .right .size li{
-        width: 30%;
+        margin-top: 10px;
+        width: 26%;
         float: left;
         margin-right: 2%;
         background:#F9F9F9;
+        text-align: center;
     }
     .right .size li b{
         font-size: 12px;
         font-weight: bold;
+        color:#353D44;
     }
     .right .size li p{
         font-size: 10px;
@@ -231,7 +266,33 @@ export default{
     }
     .shop .comments{
         color: #999;
-        margin-top:100px;
+        margin-top:90px;
+        font-size: 14px;
+    }
+    .shop .comments span{
+        padding-right:10px;
+        font-size: 12px;
+    }
+    .shop .comments .shopName{
+        font-size: 12px;
+        position: relative;
+        word-break: break-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        display: inline-block;
+        padding-right: 44px;
+        width: 136px;
+        white-space: nowrap;
+    }
+    .shop .comments .shopName::after{
+        position: absolute;
+        content: '进店>';
+        width: 40px;
+        font-size: 12px;
+        top: 0px;
+        right: -8px;
     }
 
 

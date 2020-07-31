@@ -12,7 +12,7 @@ import type1 from '../../components/detail/type1.vue'
 import type2 from '../../components/detail/type2.vue'
 import type3 from '../../components/detail/type3.vue'
 import shoplist from '../../components/detail/shoplist.vue'
-
+import detail from '../../components/detail/detail.vue'
 //import details from '../../components/product/details.vue';
 //Vue.use(VueRouter)
 
@@ -69,6 +69,10 @@ export default new VueRouter({
                     {
                         path:'/shoplist',
                         component:shoplist
+                    },
+                    {
+                        path:'/detail',
+                        component:detail
                     },
                     {
                         path:'/*',

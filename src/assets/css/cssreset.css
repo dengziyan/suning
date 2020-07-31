@@ -6,13 +6,20 @@
 ul{
 	list-style: none;
 }
-a{
+/* a{
 	text-decoration: none;
-}
+} */
 b{
 	font-weight: normal;
 }i{
 	font-style: normal;
 }u{
 	text-decoration: none;
+}
+a,a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
 }

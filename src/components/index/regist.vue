@@ -2,7 +2,7 @@
     <div>
         <header>  
             <h4>企业注册</h4>                   
-            <span><img src="../../assets/img/back.png" alt=""></span>
+            <router-link to="/my"><span><img src="../../assets/img/back.png" alt=""></span></router-link>
             <i>联系客服</i>
         </header>
         <main>

@@ -2,7 +2,7 @@
   <div>
     	<header>
 			<h2>
-				<span><router-link to="/type"></router-link></span>
+				<span><router-link to="/type"></router-link></span>				
 				<img src="../../assets/img/tittle.png" alt=""></h2>
 			<div class="nav">
 				<!-- <ul>
@@ -112,12 +112,12 @@
 	}
 	header h2 span{
 		background: url('../../assets/img/大于.png') no-repeat;
-		background-size: 71%;
+		background-size: 37%;
 		position: absolute;
 		top: 13px;
-		right: 250px;
+		right: 304px;
 		bottom: 3px;
-		left: -8px;
+		left: -42px;
 		transform: rotate(180deg);
 	}
 	/* header ul{

@@ -19,8 +19,8 @@
     			</div>
     		</div>
     		<!-- 轮播图 -->
-    		<div class="banner">	    		
-	    			<swiper ref="mySwiper" :options="swiperOptions">
+    		<div class="banner" v-if="banners.length>0">	    		
+	    			<swiper ref="mySwiper" :options="swiperOptions" >
 						   <swiper-slide v-for="banner in banners" :key="banner"> <img :src="banner"></swiper-slide>
 						    <div class="swiper-pagination" slot="pagination"></div>
 					</swiper>									
@@ -524,7 +524,7 @@
     	height: 1.2rem;
 	}
 	.like ul{
-		min-height: 1800px;
+		min-height: 3000px;
 		box-sizing: border-box;
 		/* display: flex;
 		justify-content: space-between;  */
@@ -552,6 +552,15 @@
 		font-size: .52rem;
 		line-height: .68rem;
 		font-weight: bold;	
+		display: inline-block;
+  width: 100%;
+  line-height: 50rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 	}
 	.like ul li span{
 		/* display: block; */
